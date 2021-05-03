@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+   
+    box-sizing: border-box;
+    font-size: 62.5%;
+    --bg-color:#4682b4;
+    --bg-color-container:#2A4E6C;
+} 
+h1{
+    font-size: 3.2rem;
+}
+h2 {
+    font-size: 2.4rem;}
+h3 {
+    font-size: 1.872rem;}
+h4 {
+    font-size: 1.6rem;}
+h5 {
+    font-size: 1.328rem;}
+h6 {
+    font-size: 1.2rem;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    height: 100vh;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin:0;
+    overflow: hidden;
+
+}
+
+    
+.container{
+    background-color: var(--bg-color-container) ;
+    color:white;
+    width: 40rem;
+    height:50rem;
+    padding:1.6rem 4rem;
+    border-radius: 1.5rem;
+}
+.container h1{
+    text-align: center;
+    margin-bottom:4rem;
+}
+
+.container form{
+    font-size: 3rem;
+}
+
+.container a , p{
+    font-size : 1.6rem;
+}
+.container input{
+    position: relative;
+    font-size: 1.6rem;
+    width:100%;
+    margin-bottom: 5rem;
+    background-color: transparent;
+    border:0;
+    border-bottom: .2rem solid #fff;
+
+}
+.container input:active ,
+.container input:focus 
+{
+    outline: none;
+}
+
+.container label{
+    position: absolute;
+    transform: translateY(-9rem);
+}
+
+.container input[type="button"] {
+    background-color: var(--bg-color);
+    border:.2rem solid var(--bg-color);
+    padding: 1rem 0;
+    font-size: 2rem;
+    color:white;
+    cursor: pointer;
+
+}
+.container input[type="button"]:active{
+    transform: scale(.98);
+}
+
+.container a{
+    text-decoration: none;
+    color:var(--bg-color);
+}
+
+form input:focus + label span,
+form input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+@media (max-width:998px){
+    html{
+        font-size:55%;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size:45%;
+    }
+}
