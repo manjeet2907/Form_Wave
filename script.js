@@ -1,4 +1,4 @@
-const labels = document.querySelectorAll('.container label')
+const labels = document.querySelectorAll('.formline label')
 
 labels.forEach(label => {
     label.innerHTML = label.innerText
